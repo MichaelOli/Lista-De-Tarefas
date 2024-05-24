@@ -1,18 +1,17 @@
-#Variavel que recebe a lista
+# Lista para armazenar as tarefas
+tarefas = []
 
-tarefas =[]
-    
-# nova tarefa é inserida na lista
+# Loop para adicionar tarefas
 while True:
-# usuario informa o nome da nova fruta
-    add_tarefa = input('Informe o nome de uma tarefa ou simplesmente aperte "enter" para que a lista seja exibida:  ')
-#Verifica se o usuario inseriu a nova tarefa
-    if add_tarefa !='':
+    # Solicita o nome da tarefa
+    add_tarefa = input('Informe o nome de uma tarefa ou aperte "enter" para exibir a lista: ')
+
+    # Verifica se o usuário inseriu uma tarefa ou deseja exibir a lista
+    if add_tarefa:
         tarefas.append(add_tarefa)
-        continue
     else:
         break
-# exibe na tela a nova lista
-for tarefa in tarefas:        
-    print(tarefa)
 
+# Exibe a lista de tarefas
+for tarefa in tarefas:
+    print(tarefa)
